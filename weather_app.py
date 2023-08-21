@@ -6,7 +6,7 @@ def get_weather_data(api_key, city_name):
     params = {
         "q": city_name,
         "appid": api_key,
-        "units": "metric"  # Units can be changed to imperial if desired
+        "units": "metric"  
     }
     
     response = requests.get(base_url, params=params)
@@ -33,7 +33,7 @@ def get_pressure(data, target_date):
     return None
 
 def main():
-    api_key = "d713f891ab665a0fa9d6bf1fd6c2a4a7"  # Replace with your actual API key
+    api_key = "d713f891ab665a0fa9d6bf1fd6c2a4a7"
     city_name = input("Enter city name: ")
     
     while True:
